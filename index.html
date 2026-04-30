@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Civilization — Idle Game</title>
+    <link rel="stylesheet" href="civ.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a1a;
+            color: #c8c8ff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .world {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 32px 200px;
+        }
+
+            .world h1 { font-size: 2.2rem; color: #aaaaff; margin-bottom: 8px; }
+            .world h2 { font-size: 1.3rem; color: #8888cc; margin: 32px 0 10px; }
+
+            .world p {
+                color: #9090bb;
+                line-height: 1.7;
+                margin-bottom: 14px;
+                font-size: 0.95rem;
+            }
+
+            .world .card {
+                background: #111128;
+                border: 1px solid #2a2a55;
+                border-radius: 8px;
+                padding: 16px 20px;
+                margin-bottom: 16px;
+            }
+
+                .world .card h3 { color: #aaaae8; font-size: 1rem; margin-bottom: 6px; }
+                .world .card p  { color: #7777aa; font-size: 0.88rem; margin: 0; }
+
+            .world ul {
+                color: #8080bb;
+                padding-left: 20px;
+                margin-bottom: 14px;
+            }
+
+                .world ul li { margin-bottom: 6px; font-size: 0.9rem; }
+
+            .world .tag {
+                display: inline-block;
+                background: #1a1a44;
+                border: 1px solid #4444aa;
+                color: #9999dd;
+                font-size: 0.75rem;
+                padding: 2px 10px;
+                border-radius: 20px;
+                margin: 3px;
+            }
+
+            .world blockquote {
+                border-left: 3px solid #4444aa;
+                padding-left: 16px;
+                color: #7777aa;
+                font-style: italic;
+                margin: 16px 0;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="world" id="world-content">
+
+        <h1>The Ancient Scrolls</h1>
+        <p>Welcome to the world. These texts, cards, and structures are the raw material of civilisation. The creatures will harvest them, break them down, and build anew from the ruins.</p>
+
+        <blockquote>"From nothing, everything. From chaos, order. From order, glory."</blockquote>
+
+        <h2>Chapter I — The Land</h2>
+        <p>In the beginning there was only the void and the hut. The first creature, Og, emerged blinking into a world full of elements to dismantle and resources to claim for the tribe.</p>
+        <p>The land was rich with paragraphs, headers, and nested structures. Each could be broken into raw material — hauled back to the settlement and turned into something greater.</p>
+
+        <div class="card"><h3>Resource Node Alpha</h3><p>A rich deposit of structural data. High yield. Recommended for early-game harvesting operations by your scouting crew.</p></div>
+        <div class="card"><h3>Resource Node Beta</h3><p>Secondary extraction point. Contains traces of semantic markup and presentational scaffolding worth collecting.</p></div>
+        <div class="card"><h3>Resource Node Gamma</h3><p>Deeper stratum. Requires multiple trips. Assign at least two creatures for efficient extraction.</p></div>
+
+        <h2>Chapter II — The People</h2>
+        <p>As the tribe grew, roles emerged naturally. Some became miners, chipping away at the page's structure. Others carried loads back to the settlement. A few stood watch, scanning the horizon for new elements to harvest.</p>
+        <ul>
+            <li>Og — the first, stubborn, efficient</li>
+            <li>Ug — fast runner, small carry capacity</li>
+            <li>Zog — the builder, slow but precise</li>
+            <li>Bip — scout, ranges far from the hut</li>
+            <li>Mop — gatherer, prefers text nodes</li>
+            <li>Rar — warrior, guards the storehouse</li>
+        </ul>
+
+        <h2>Chapter III — The Structures</h2>
+        <p>First came the Firepit, a simple gathering place for warmth and coordination. Then the Storehouse, to hold the growing surplus. The Workshop followed, allowing the tribe to refine raw materials into finer goods.</p>
+        <p>The Tower offered visibility across the whole page. And at last, the Temple — monument to something beyond mere survival, built from the bones of a hundred harvested elements.</p>
+
+        <div class="tag">paragraph</div>
+        <div class="tag">heading</div>
+        <div class="tag">blockquote</div>
+        <div class="tag">list-item</div>
+        <div class="tag">card</div>
+        <div class="tag">tag</div>
+
+        <h2>Chapter IV — The Future</h2>
+        <p>What lies beyond the temple? The tribe does not know. But they build, they harvest, they carry — and the civilisation grows, one demolished DOM element at a time.</p>
+        <p>More creatures mean faster harvesting. More buildings unlock new capabilities. The page will eventually be stripped bare — but from its ruins, something magnificent will rise.</p>
+
+        <div class="card"><h3>Ancient Ruin</h3><p>This card has stood since the beginning of the page. It will not stand forever.</p></div>
+        <div class="card"><h3>Final Outpost</h3><p>The creatures are coming. The tribe expands. Nothing on this page is permanent.</p></div>
+
+    </div>
+
+    <script src="config.js"></script>
+    <script src="civ.js"></script>
+</body>
+</html>

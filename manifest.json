@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "DOM Civilisation",
+  "version": "1.0",
+  "description": "Unleash a civilisation of tiny creatures to harvest the DOM.",
+  "action": {
+    "default_title": "Civilise this page"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "activeTab"]
+}
