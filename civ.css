@@ -136,3 +136,49 @@
         opacity: 0.4;
         cursor: default;
     }
+
+#civ-info {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9001;
+    background: #0e0e22;
+    border: 1px solid #3a3a7a;
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #c0c0ff;
+    font-size: 11px;
+    min-width: 180px;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 4px 24px rgba(0,0,100,0.4);
+    pointer-events: none;
+}
+
+#civ-info-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #8888ff;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.info-bar {
+    background: #1a1a3a;
+    border-radius: 2px;
+    height: 4px;
+    overflow: hidden;
+    margin: 2px 0 5px;
+}
+
+.info-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s, background 0.3s;
+}
+
+.info-bar-label {
+    font-size: 9px;
+    color: #555588;
+    margin-top: 3px;
+}
